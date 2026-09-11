@@ -7,7 +7,7 @@
  * - Code Général des Impôts 2026
  * - Loi de Finances 2026
  *
- * Les 5 régimes officiel sont déterminés par le chiffre d'affaires annuel TTC.
+ * Les 4 régimes officiels (TEE jusqu'au RNI) sont déterminés par le chiffre d'affaires annuel TTC.
  * Une transition automatique intervient quand le CA franchit les seuils.
  *
  * Références officielles:
@@ -16,21 +16,6 @@
  */
 
 export const REGIMES_FISCAUX = {
-  communal: {
-    id: 'communal',
-    nom: 'Taxe communale de l\'Entrepreneur',
-    description: 'Pour les entreprises avec CA < 5 millions FCFA. Impôt communal de 2-2,5% du CA sans TVA.',
-    tva: 0,
-    assujetti: false,
-    impotBenefice: false,
-    contribution: true,
-    declaration: 'Communale',
-    fichesClients: false,
-    provisions: false,
-    seuilMax: 5000000,
-    taux_detail: '2,5% (commerce/négoce) ou 2% (services/artisanat) du CA',
-    description_details: 'Impôt communal pour très petites entreprises. Pas de TVA. Paiement à la commune locale. Seuil d\'exonération: CA < 1,2M FCFA/an avec tarif forfaitaire journalier.'
-  },
   tee: {
     id: 'tee',
     nom: 'Taxe d\'État de l\'Entrepreneur (TEE)',
@@ -97,7 +82,7 @@ export const REGIMES_FISCAUX = {
 }
 
 export function obtenirRegime(id) {
-  return REGIMES_FISCAUX[id] || REGIMES_FISCAUX.reel
+  return REGIMES_FISCAUX[id] || REGIMES_FISCAUX.tee
 }
 
 export function listerRegimes() {
