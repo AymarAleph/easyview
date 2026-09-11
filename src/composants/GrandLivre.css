@@ -1,0 +1,115 @@
+.grand-livre {
+  margin: 2rem 0;
+}
+
+.grand-livre h2 {
+  color: #0056b3;
+  margin-top: 0;
+}
+
+.grand-livre .info {
+  color: #999;
+  font-style: italic;
+}
+
+.recherche {
+  margin: 1.5rem 0;
+}
+
+.input-recherche {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.input-recherche:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.2);
+}
+
+.comptes-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.compte-section {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.compte-entete {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.compte-entete .num-compte {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0056b3;
+  font-family: monospace;
+}
+
+.compte-entete .intitule {
+  color: #666;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.compte-entete .solde {
+  font-weight: 600;
+  font-family: monospace;
+  text-align: right;
+  min-width: 180px;
+}
+
+.compte-entete .solde.debiteur {
+  color: #1976d2;
+}
+
+.compte-entete .solde.crediteur {
+  color: #d32f2f;
+}
+
+.compte-entete .solde.equilibre {
+  color: #388e3c;
+}
+
+.tableau-ecritures {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tableau-ecritures th,
+.tableau-ecritures td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tableau-ecritures th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.tableau-ecritures tr:hover {
+  background-color: #fafafa;
+}
+
+.tableau-ecritures .montant {
+  text-align: right;
+  font-family: monospace;
+  color: #333;
+}

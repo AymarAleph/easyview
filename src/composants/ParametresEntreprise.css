@@ -1,0 +1,306 @@
+.parametres-entreprise {
+  margin: 0;
+}
+
+.parametres-entreprise h2 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.affichage-parametres {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.section-params {
+  padding: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section-params:last-child {
+  border-bottom: none;
+}
+
+.section-params h3 {
+  color: #0056b3;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.params-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.param {
+  display: flex;
+  flex-direction: column;
+}
+
+.param.full {
+  grid-column: 1 / -1;
+}
+
+.param label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.param .valeur {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+}
+
+.regime-card {
+  background: linear-gradient(135deg, #f0f5ff 0%, #fafbff 100%);
+  border: 2px solid #0056b3;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.regime-titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.regime-titre h4 {
+  margin: 0;
+  color: #0056b3;
+  font-size: 1.1rem;
+}
+
+.regime-id {
+  background-color: #0056b3;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.regime-desc {
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.regime-caracteristiques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.caract {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  border-left: 3px solid #0056b3;
+}
+
+.caract .label {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.caract .valeur {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0056b3;
+}
+
+.caract .valeur.assujetti {
+  color: #2e7d32;
+}
+
+.caract .valeur.exempt {
+  color: #f57f17;
+}
+
+.btn-editer {
+  background-color: #0056b3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 2rem;
+  transition: background-color 0.2s;
+}
+
+.btn-editer:hover {
+  background-color: #004494;
+}
+
+.formulaire-parametres {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.section-form {
+  padding: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section-form:last-of-type {
+  border-bottom: none;
+}
+
+.section-form h3 {
+  color: #0056b3;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-groupe {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-groupe.full {
+  grid-column: 1 / -1;
+}
+
+.form-groupe label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-groupe input,
+.form-groupe select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-groupe input:focus,
+.form-groupe select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.2);
+}
+
+.regime-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.regime-option {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.regime-option:hover {
+  border-color: #0056b3;
+  background-color: #f9f9f9;
+}
+
+.regime-option.selected {
+  border-color: #0056b3;
+  background-color: #f0f5ff;
+}
+
+.regime-option input {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.regime-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.regime-nom {
+  font-weight: 600;
+  color: #333;
+}
+
+.regime-desc-petit {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.regime-tva {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0056b3;
+}
+
+.form-boutons {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  justify-content: flex-end;
+}
+
+.btn-valider,
+.btn-annuler {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.btn-valider {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-valider:hover {
+  background-color: #004494;
+}
+
+.btn-annuler {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.btn-annuler:hover {
+  background-color: #e0e0e0;
+}

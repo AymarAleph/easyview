@@ -1,0 +1,273 @@
+.gestion-licence {
+  margin: 0;
+}
+
+.gestion-licence h2 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.licence-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid #999;
+}
+
+.licence-card.ok {
+  border-left-color: #4caf50;
+  background-color: #f1f8f4;
+}
+
+.licence-card.alerte {
+  border-left-color: #fbc02d;
+  background-color: #fffde7;
+}
+
+.licence-card.erreur {
+  border-left-color: #f44336;
+  background-color: #ffebee;
+}
+
+.licence-status {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.status-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.licence-card.ok .status-icon {
+  color: #4caf50;
+}
+
+.licence-card.alerte .status-icon {
+  color: #fbc02d;
+}
+
+.licence-card.erreur .status-icon {
+  color: #f44336;
+}
+
+.status-texte h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.status-texte .type {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.licence-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.detail .label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.detail .valeur {
+  font-size: 1rem;
+  color: #333;
+  font-family: monospace;
+}
+
+.detail.jours .valeur {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0056b3;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.message.succes {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  border: 1px solid #81c784;
+}
+
+.message.erreur {
+  background-color: #ffcdd2;
+  color: #c62828;
+  border: 1px solid #ef5350;
+}
+
+.licence-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-renouveler,
+.btn-activer {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-renouveler {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-renouveler:hover {
+  background-color: #f57c00;
+}
+
+.btn-activer {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-activer:hover {
+  background-color: #004494;
+}
+
+.form-activation {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.form-activation h3 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-groupe {
+  margin-bottom: 1.5rem;
+}
+
+.form-groupe label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-groupe input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-groupe input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.2);
+}
+
+.form-groupe small {
+  display: block;
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.form-boutons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.btn-valider,
+.btn-annuler {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn-valider {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-valider:hover {
+  background-color: #004494;
+}
+
+.btn-annuler {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.btn-annuler:hover {
+  background-color: #e0e0e0;
+}
+
+.licence-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.licence-info h3 {
+  color: #0056b3;
+  margin-top: 0;
+}
+
+.licence-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.legal {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
