@@ -9,3 +9,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[plugins]
+  [[plugins."netlify-plugin-cloudinary"]]
+  enabled = false
